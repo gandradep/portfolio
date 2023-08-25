@@ -4,7 +4,7 @@ import * as THREE from 'three';
 
 
 const Cover = () => {
-  const sceneRef = useRef(null);
+  const sceneRef = useRef();
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -32,57 +32,56 @@ const Cover = () => {
       '/images/cover/pz.png',
       '/images/cover/nz.png'
     ]);
-    console.log(environmentMapTexture);
-
     // Create a cube and add it to the scene
-    const geometry = new THREE.SphereGeometry(0.5, 16, 16);
+    const geometry = new THREE.SphereGeometry(1, 16, 16);
     const material = new THREE.MeshStandardMaterial({
       envMap: environmentMapTexture,
-      metalness: 0.7,
-      roughness: 0.2
+      metalness: 0.8,
+      roughness: 0.1
     });
     const mesh = new THREE.Mesh(geometry, material);
-    mesh.scale.x = sizes.width * 0.0025;
-    mesh.scale.y = sizes.height * 0.0025;
+    mesh.scale.x = sizes.width * 0.003;
+    mesh.scale.y = sizes.height * 0.003;
     scene.add(mesh);
 
     camera.position.z = 5;
 
-    window.addEventListener('resize', () =>
-{
-  // Update sizes
-  sizes.width = window.innerWidth
-  sizes.height = window.innerHeight
+window.addEventListener('resize', () =>
+  {
+    // Update sizes
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
 
-  mesh.scale.x = sizes.width * 0.0025;
-  mesh.scale.y = sizes.height * 0.0025;
+    mesh.scale.x = sizes.width * 0.0025;
+    mesh.scale.y = sizes.height * 0.0025;
 
-  // Update camera
-  camera.aspect = sizes.width / sizes.height
-  camera.updateProjectionMatrix()
+    // Update camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
 
-  // Update renderer
-  renderer.setSize(sizes.width, sizes.height)
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-})
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+  });
 
 
     // Animation/render loop
-    const animate = () => {
+  const animate = () => {
 
 
-      // Rotate the cube
-      mesh.rotation.x += 0.01;
-      mesh.rotation.y += 0.01;
+    // Rotate the cube
+    mesh.rotation.x += 0.005;
+    mesh.rotation.y += 0.007;
 
-      renderer.render(scene, camera);
-      requestAnimationFrame(animate);
-    };
-
-    animate();
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  };
+  animate();
   }, []);
 
-  return <div ref={sceneRef} />;
+  return <div className="cover" ref={sceneRef} />;
 };
 
 export default Cover;
+
+
