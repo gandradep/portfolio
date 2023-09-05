@@ -1,10 +1,9 @@
 import './project-item.styles.scss';
 
 const ProjectItem = ({info}) => {
-  console.log(info);
   return(
     <div>
-      check
+      {info.title} {info.type}
     </div>
   )
 };

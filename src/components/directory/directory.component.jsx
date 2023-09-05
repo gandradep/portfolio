@@ -1,10 +1,14 @@
 import ProjectItem from '../project-item/project-item.component';
 import './directory.styles.scss';
 
-const Directory = ({projects}) => {
+const Directory = ({projects, filterBy}) => {
+  console.log(filterBy);
+  const filteredProjects = projects.filter((project) => {
+    return project.type === filterBy;
+  });
   return(
     <div >
-      {projects.map((project) => (
+      {filteredProjects.map((project) => (
       <ProjectItem key={project.id} info={project}/>
     ))}
     </div>
