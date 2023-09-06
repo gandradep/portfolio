@@ -7,7 +7,7 @@ const Directory = ({projects, filterBy}) => {
     return project.type === filterBy;
   });
   return(
-    <div >
+    <div className='directory-container'>
       {filteredProjects.map((project) => (
       <ProjectItem key={project.id} info={project}/>
     ))}
