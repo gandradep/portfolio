@@ -4,6 +4,7 @@ import Directory from "../directory/directory.component";
 import './projects.styles.scss';
 const Projects = () => {
   const [filterBy, setFilterBy] = useState('developer');
+  // type: developer||creative||music
   const projects = [
     {
       "id": 1,
@@ -14,9 +15,10 @@ const Projects = () => {
     },
     {
       "id": 2,
-      "title": "example2",
-      "imageUrl": "/images/projects/budgetMobile.png",
-      "type": "creative"
+      "title": "Munay Suyu",
+      "imageUrl": "/images/projects/munaySuyuMobile.png",
+      "type": "developer",
+      "description": "Our project is an all-encompassing mobile application tailored for a spiritual school. This app serves as a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
     },
     {
       "id": 3,
