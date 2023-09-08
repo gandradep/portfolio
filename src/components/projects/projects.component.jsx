@@ -31,7 +31,7 @@ const Projects = () => {
     setFilterBy(content);
   }
   return(
-    <div>
+    <div className="projects-container">
       <h1>My Recent Works</h1>
       <button
         onClick={() =>handleButtonClick('developer')}

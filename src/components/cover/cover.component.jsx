@@ -22,7 +22,7 @@ const Cover = () => {
     sceneRef.current.appendChild(renderer.domElement);
 
     //texture
-    const textureLoader = new THREE.TextureLoader();
+    // const textureLoader = new THREE.TextureLoader();
     const cubeTextureLoader = new THREE.CubeTextureLoader();
     const environmentMapTexture = cubeTextureLoader.load([
       '/images/cover/px.png',
@@ -45,38 +45,45 @@ const Cover = () => {
     scene.add(mesh);
 
     camera.position.z = 5;
-
+let resizeTimeout;
 window.addEventListener('resize', () =>
   {
     // Update sizes
-    sizes.width = window.innerWidth
-    sizes.height = window.innerHeight
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      sizes.width = window.innerWidth;
+    sizes.height = window.innerHeight;
 
     mesh.scale.x = sizes.width * 0.0025;
     mesh.scale.y = sizes.height * 0.0025;
 
     // Update camera
-    camera.aspect = sizes.width / sizes.height
-    camera.updateProjectionMatrix()
+    camera.aspect = sizes.width / sizes.height;
+    camera.updateProjectionMatrix();
 
     // Update renderer
-    renderer.setSize(sizes.width, sizes.height)
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    }, 250);
   });
 
 
     // Animation/render loop
+  const clock = new THREE.Clock();
   const animate = () => {
-
-
+    const elapsedTime = clock.getElapsedTime();
     // Rotate the cube
-    mesh.rotation.x += 0.005;
-    mesh.rotation.y += 0.007;
+    mesh.rotation.x = Math.sin(elapsedTime * 0.5 ) * 0.5;
+    mesh.rotation.y = Math.cos(elapsedTime * 0.45) * 0.5;
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
   };
   animate();
+  return () => {
+    renderer.dispose();
+  }
   }, []);
 
   return <div className="cover" ref={sceneRef} />;
