@@ -1,7 +1,11 @@
 import './project-item.styles.scss';
 
-const ProjectItem = ({info}) => {
+const ProjectItem = ({info, onClick}) => {
   const { imageUrl, title } = info;
+  const handleClick = () => {
+    onClick(info);
+  }
+
   return(
     <div className='project-container'>
       <div
@@ -10,7 +14,7 @@ const ProjectItem = ({info}) => {
           {backgroundImage: `url(${imageUrl})`}
         }
       />
-      <div className="project-body-container">
+      <div className="project-body-container" onClick={handleClick}>
         <h2>{title}</h2>
       </div>
 
