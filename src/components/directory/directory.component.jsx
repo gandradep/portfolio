@@ -32,7 +32,7 @@ const Directory = ({projects, filterBy}) => {
     ))}
 
     {selectedProject && (
-      <ModalProjectInfo title={selectedProject.title} onClose={closeModal} />
+      <ModalProjectInfo info={selectedProject} onClose={closeModal} />
     )}
     </div>
   )

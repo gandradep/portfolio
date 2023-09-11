@@ -1,5 +1,5 @@
 .project-container {
-  width: 30%;
+  width: 70%;
   height: 240px;
   border: 1px solid black;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
   overflow: hidden;
 
-  &:hover {
+  &:hover, &.tapped {
     cursor: pointer;
 
     & .background-image {
@@ -40,5 +40,9 @@
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s ease;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 30%;
   }
 }
