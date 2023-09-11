@@ -1,14 +1,24 @@
+import React, { useState } from 'react';
+
 import ProjectItem from '../project-item/project-item.component';
+import ModalProjectInfo from '../modal-project-info/modal-project-info.component';
 import './directory.styles.scss';
 
 const Directory = ({projects, filterBy}) => {
+
+  const [selectedProject, setSelectedProject] = useState(null);
   const filteredProjects = projects.filter((project) => {
     return project.type === filterBy;
   });
 
   const handleProjectItemClick = (projectInfo) => {
     // Log the project info when a project item is clicked
-    console.log(projectInfo);
+    setSelectedProject(projectInfo);
+  };
+
+  const closeModal = () => {
+    // Close the modal by resetting the selected project
+    setSelectedProject(null);
   };
 
   return(
@@ -20,6 +30,10 @@ const Directory = ({projects, filterBy}) => {
         onClick={handleProjectItemClick}
       />
     ))}
+
+    {selectedProject && (
+      <ModalProjectInfo title={selectedProject.title} onClose={closeModal} />
+    )}
     </div>
   )
 }
