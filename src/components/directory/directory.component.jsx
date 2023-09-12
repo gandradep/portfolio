@@ -22,7 +22,7 @@ const Directory = ({projects, filterBy}) => {
   };
 
   return(
-    <div className='directory-container'>
+    <div className='directory-container my-4'>
       {filteredProjects.map((project) => (
       <ProjectItem
         key={project.id}

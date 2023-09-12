@@ -11,13 +11,33 @@ const Projects = () => {
       "title": "Budget App",
       "type": "developer",
       "imageUrl": "/images/projects/budgetMobile.png",
+      "tech": [
+        "Ruby",
+        "Rails",
+        "Postgres"
+      ],
+      "links":{
+        "liveUrl":"https://budget-app-bdu6.onrender.com/",
+        "source":{
+          "text":"Github",
+          "url":"https://github.com/gandradep/budget_app"
+        }
+      },
       "description": "This application, helps us keep track of our expenses. You can create categories and add expenses to one or several categories you created."
     },
     {
       "id": 2,
       "title": "Munay Suyu",
-      "imageUrl": "/images/projects/munaySuyuMobile.png",
       "type": "developer",
+      "imageUrl": "/images/projects/munaySuyuMobile.png",
+      "tech": [
+        "PHP",
+        "Javascript",
+        "MySql"
+      ],
+      "links":{
+        "liveUrl":"http://munaysuyu.org/"
+      },
       "description": "Our project is an all-encompassing mobile application tailored for a spiritual school. This app serves as a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
     },
     {
@@ -32,25 +52,29 @@ const Projects = () => {
   }
   return(
     <div className="projects-container">
-      <h1>My Recent Works</h1>
-      <button
-        onClick={() =>handleButtonClick('developer')}
-        className={ filterBy === 'developer' ? 'button active-button' : 'button'}
-      >
-          Developer
-      </button>
-      <button
-        onClick={() =>handleButtonClick('creative')}
-        className={ filterBy === 'creative' ? 'button active-button' : 'button'}
-      >
-          Creative Tech
-      </button>
-      <button
-        onClick={() =>handleButtonClick('music')}
-        className={ filterBy === 'music' ? 'button active-button' : 'button'}
-      >
-          Music
-      </button>
+      <h1 className='text-center'>My Recent Works</h1>
+      <div className='my-4 d-flex flex-column flex-sm-row justify-content-center align-items-center'>
+        <button
+          onClick={() =>handleButtonClick('developer')}
+          className={ filterBy === 'developer' ? 'button active-button' : 'button'}
+        >
+            Developer
+        </button>
+        <button
+          onClick={() =>handleButtonClick('creative')}
+          className={ filterBy === 'creative' ? 'button active-button' : 'button'}
+        >
+            Creative Tech
+        </button>
+        <button
+          onClick={() =>handleButtonClick('music')}
+          className={ filterBy === 'music' ? 'button active-button' : 'button'}
+        >
+            Music
+        </button>
+
+      </div>
+
       <Directory projects={projects} filterBy={filterBy} />
     </div>
   )

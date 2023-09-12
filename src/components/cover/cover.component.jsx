@@ -29,7 +29,7 @@ const Cover = () => {
       '/images/cover/nx.png',
       '/images/cover/py.png',
       '/images/cover/ny.png',
-      '/images/cover/pz.png',
+      '/images/cover/pz2.png',
       '/images/cover/nz.png'
     ]);
     // Create a cube and add it to the scene

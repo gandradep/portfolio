@@ -6,24 +6,22 @@ const ProjectItem = ({info, onClick}) => {
   const [isTapped, setIsTapped] = useState(false);
 
   const handleTap = () => {
+
+
     if (isMobileDevice()) {
-      if (isTapped) {
-        // Trigger the onClick prop on the second tap/click
+      if(isTapped){
         onClick(info);
       }
-      setIsTapped(!isTapped); // Toggle the tapped state
+      setIsTapped(!isTapped);
     } else {
-      // On desktop, directly trigger the onClick prop on the first click
+      // On desktop, trigger the onClick prop
       onClick(info);
     }
   }
 
   const isMobileDevice = () => {
-    return (
-      'ontouchstart' in window ||
-      navigator.maxTouchPoints > 0 ||
-      navigator.msMaxTouchPoints > 0
-    );
+    const mobileWidthThreshold = 768; // Adjust this threshold as needed
+    return window.innerWidth < mobileWidthThreshold;
   };
 
   const containerClassName = `project-container ${
@@ -31,7 +29,7 @@ const ProjectItem = ({info, onClick}) => {
   }`;
 
   return(
-    <div className={containerClassName} onClick={handleTap}>
+    <div className={`${containerClassName} my-2`} onClick={handleTap}>
       <div
         className='background-image'
         style={
