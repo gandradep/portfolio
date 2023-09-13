@@ -2,7 +2,7 @@ import './modal-project-info.styles.scss';
 
 const ModalProjectInfo = ({info, onClose}) => {
   const {title, description, tech, imageUrl, links} = info;
-  console.log(links);
+
   return(
     <div className="modal-overlay">
       <div className="modalContent">
@@ -20,14 +20,24 @@ const ModalProjectInfo = ({info, onClose}) => {
               <h4>Tech</h4>
               <div className='d-flex justify-content-start'>
                 {tech.map((item) => (
-                  <p className='me-2 p-2 badge rounded-pill text-bg-secondary' key={item.id}>{item}</p>
+                  <p className='me-2 px-3 py-2 badge rounded-pill text-bg-secondary' key={item.id}>{item}</p>
                 ))}
               </div>
               </>
             )}
 
             {links && (
-            <h4>Project Link</h4>)}
+              <>
+                <h4 className='mb-3'>Project Links</h4>
+                {links.liveUrl &&(
+                  <a className='link-button' href={links.liveUrl} target='_blank' rel="noreferrer">Live</a>
+                )}
+                {links.source &&(
+                  <a className='link-button' href={links.source.url} target='_blank' rel="noreferrer">{links.source.text}</a>
+                )}
+
+              </>
+            )}
 
           </div>
 

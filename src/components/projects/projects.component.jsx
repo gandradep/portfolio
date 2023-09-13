@@ -8,25 +8,6 @@ const Projects = () => {
   const projects = [
     {
       "id": 1,
-      "title": "Budget App",
-      "type": "developer",
-      "imageUrl": "/images/projects/budgetMobile.png",
-      "tech": [
-        "Ruby",
-        "Rails",
-        "Postgres"
-      ],
-      "links":{
-        "liveUrl":"https://budget-app-bdu6.onrender.com/",
-        "source":{
-          "text":"Github",
-          "url":"https://github.com/gandradep/budget_app"
-        }
-      },
-      "description": "This application, helps us keep track of our expenses. You can create categories and add expenses to one or several categories you created."
-    },
-    {
-      "id": 2,
       "title": "Munay Suyu",
       "type": "developer",
       "imageUrl": "/images/projects/munaySuyuMobile.png",
@@ -41,7 +22,45 @@ const Projects = () => {
       "description": "Our project is an all-encompassing mobile application tailored for a spiritual school. This app serves as a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
     },
     {
+      "id": 2,
+      "title": "Conference Page",
+      "type": "developer",
+      "imageUrl": "/images/projects/conference_page.png",
+      "tech": [
+        "Html",
+        "CSS3",
+        "Javascript"
+      ],
+      "links":{
+        "liveUrl":"https://gandradep.github.io/conferencePage/index.html",
+        "source":{
+          "text":"Github",
+          "url":"https://github.com/gandradep/conferencePage"
+        }
+      },
+      "description": "The Mobile-Responsive Single Page Application (SPA) for a conference page is a software development initiative aimed at creating a user-friendly and mobile-optimized platform for hosting and managing conference-related content. "
+    },
+    {
       "id": 3,
+      "title": "Famous Quotes",
+      "type": "developer",
+      "imageUrl": "/images/projects/quotes.png",
+      "tech": [
+        "Html",
+        "CSS3",
+        "Javascript"
+      ],
+      "links":{
+        "liveUrl":"https://profound-biscochitos-b105fe.netlify.app/",
+        "source":{
+          "text":"Github",
+          "url":"https://github.com/gandradep/famousQuotes"
+        }
+      },
+      "description": "A user-friendly mobile application designed to connect you with the profound wisdom of history's most influential thinkers. With just a few taps, you can delve into the profound insights and words of wisdom that have shaped our world. "
+    },
+    {
+      "id": 4,
       "title": "example3",
       "imageUrl": "/images/projects/budgetMobile.png",
       "type": "music"
