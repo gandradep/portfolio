@@ -1,6 +1,6 @@
 import './modal-project-info.styles.scss';
 
-const ModalProjectInfo = ({info, onClose}) => {
+const ModalDeveloperInfo = ({info, onClose}) => {
   const {title, description, tech, imageUrl, links} = info;
 
   return(
@@ -49,4 +49,4 @@ const ModalProjectInfo = ({info, onClose}) => {
 
 }
 
-export default ModalProjectInfo;
+export default ModalDeveloperInfo;

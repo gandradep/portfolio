@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import ProjectItem from '../project-item/project-item.component';
-import ModalProjectInfo from '../modal-project-info/modal-project-info.component';
+import ModalDeveloperInfo from '../modal-project-info/modal-project-developer-info.component';
+import ModalMusicInfo from '../modal-project-info/modal-project-music-info.component';
 import './directory.styles.scss';
 
 const Directory = ({projects, filterBy}) => {
@@ -31,8 +32,11 @@ const Directory = ({projects, filterBy}) => {
       />
     ))}
 
-    {selectedProject && (
-      <ModalProjectInfo info={selectedProject} onClose={closeModal} />
+    {selectedProject && filterBy === 'developer' && (
+      <ModalDeveloperInfo info={selectedProject} onClose={closeModal} />
+    )}
+    {selectedProject && filterBy === 'music' && (
+      <ModalMusicInfo info={selectedProject} onClose={closeModal} />
     )}
     </div>
   )
