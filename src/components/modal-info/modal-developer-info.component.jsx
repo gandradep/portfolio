@@ -1,18 +1,10 @@
-import './modal-project-info.styles.scss';
+import './modal-info.styles.scss';
 
-const ModalDeveloperInfo = ({info, onClose}) => {
-  const {title, description, tech, imageUrl, links} = info;
-
+const ModalDeveloperInfo = ({info}) => {
+  const {description, tech, imageUrl, links} = info;
   return(
-    <div className="modal-overlay">
-      <div className="modalContent">
-        <button onClick={onClose} className="close-button">
-          &times; {/* The '×' character for the close button */}
-        </button>
-        <h2>{title}</h2>
-
-        <div className='d-flex row mt-4'>
-        <img className='img-fluid col-12 col-sm-5 align-self-center order-sm-1' src={imageUrl} alt="" />
+    <div className='d-flex row mt-4'>
+          <img className='img-fluid col-12 col-sm-5 align-self-center order-sm-1' src={imageUrl} alt="" />
           <div className='col-12 col-sm-6 mt-4 mt-sm-0'>
             <p>{description}</p>
             {tech && (
@@ -25,7 +17,6 @@ const ModalDeveloperInfo = ({info, onClose}) => {
               </div>
               </>
             )}
-
             {links && (
               <>
                 <h4 className='mb-3'>Project Links</h4>
@@ -38,15 +29,10 @@ const ModalDeveloperInfo = ({info, onClose}) => {
 
               </>
             )}
-
           </div>
-
         </div>
-
-      </div>
-    </div>
   );
 
-}
+};
 
 export default ModalDeveloperInfo;

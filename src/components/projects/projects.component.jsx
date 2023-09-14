@@ -19,7 +19,7 @@ const Projects = () => {
       "links":{
         "liveUrl":"http://munaysuyu.org/"
       },
-      "description": "Our project is an all-encompassing mobile application tailored for a spiritual school. This app serves as a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
+      "description": "This project is an all-encompassing mobile application tailored for a spiritual school. This app is a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
     },
     {
       "id": 2,
@@ -38,7 +38,7 @@ const Projects = () => {
           "url":"https://github.com/gandradep/conferencePage"
         }
       },
-      "description": "The Mobile-Responsive Single Page Application (SPA) for a conference page is a software development initiative aimed at creating a user-friendly and mobile-optimized platform for hosting and managing conference-related content. "
+      "description": "The Mobile-Responsive single-page application (SPA) for a conference page is a software development initiative to create a user-friendly and mobile-optimized platform for hosting and managing conference-related content. "
     },
     {
       "id": 3,
@@ -57,13 +57,15 @@ const Projects = () => {
           "url":"https://github.com/gandradep/famousQuotes"
         }
       },
-      "description": "A user-friendly mobile application designed to connect you with the profound wisdom of history's most influential thinkers. With just a few taps, you can delve into the profound insights and words of wisdom that have shaped our world. "
+      "description": "A user-friendly mobile application designed to connect you with the profound wisdom of history's most influential thinkers. With just a few taps, you can delve into the deep insights and words of wisdom that have shaped our world. "
     },
     {
       "id": 4,
-      "title": "example3",
-      "imageUrl": "/images/projects/budgetMobile.png",
-      "type": "music"
+      "title": "Cronistas de un Mundo sin Voces",
+      "imageUrl": "/images/projects/cronistas.png",
+      "srcUrl": "https://bandcamp.com/EmbeddedPlayer/album=3425267136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+      "type": "music",
+      "description": "Ep from LCDO released in July 2023. The album was composed during the pandemic and the songs are inspired by different controversial characters. "
     }
   ];
   const handleButtonClick = (content) => {

@@ -36,8 +36,8 @@ const ProjectItem = ({info, onClick}) => {
           {backgroundImage: `url(${imageUrl})`}
         }
       />
-      <div className="project-body-container">
-        <h2>{title}</h2>
+      <div className="project-body-container bg-light">
+        <h2 className='text-center'>{title}</h2>
       </div>
 
     </div>
