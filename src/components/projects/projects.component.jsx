@@ -65,7 +65,27 @@ const Projects = () => {
       "imageUrl": "/images/projects/cronistas.png",
       "srcUrl": "https://bandcamp.com/EmbeddedPlayer/album=3425267136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
       "type": "music",
+      "embedSrc": "bandcamp",
       "description": "Ep from LCDO released in July 2023. The album was composed during the pandemic and the songs are inspired by different controversial characters. "
+    },
+    {
+      "id": 5,
+      "title": "Llanchama",
+      "imageUrl": "/images/projects/llanchama.png",
+      "srcUrl":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/544680099&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+      "type": "music",
+      "embedSrc": "soundcloud",
+      "description": "\"Llanchama\" is an enchanting audio track that captures the essence of a transformative three-month sojourn at the spiritual center in the Peruvian town of Llanchama. Through an intricate interplay of sounds, it eloquently conveys the depth of the artist's immersive experience, inviting listeners to embark on their own spiritual voyage through the Peruvian rainforest. Explore the mystical resonance of nature, ritual, and self-discovery in this captivating installment of the Nomadic Adaptations series"
+    },
+    {
+      "id": 6,
+      "title": "No spicy",
+      "imageUrl": "/images/projects/nospicy.png",
+      "srcUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1591910699&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+      "type": "music",
+      "embedSrc": "soundcloud",
+      "description": "\"No Spicy\" is an extraordinary audio track that takes you on a captivating journey through the vibrant streets of Seoul, South Korea. This track was originally presented as part of \"Third Other 8,\" and it encapsulates the rich tapestry of sounds encountered during a two-week holiday in Seoul, including recordings from metro stations and Korean pubs."
+
     }
   ];
   const handleButtonClick = (content) => {
