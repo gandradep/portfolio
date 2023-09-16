@@ -2,6 +2,7 @@ import './modal-project.styles.scss';
 
 import ModalDeveloperInfo from '../modal-info/modal-developer-info.component';
 import ModalMusicInfo from '../modal-info/modal-music-info.component';
+import ModalCreativeInfo from '../modal-info/modal-creative-info.component';
 
 const ModalProject = ({info, onClose}) => {
   const {title} = info;
@@ -18,6 +19,9 @@ const ModalProject = ({info, onClose}) => {
         )}
         {info.type==='music' && (
           <ModalMusicInfo info={info} />
+        )}
+        {info.type==='creative' && (
+          <ModalCreativeInfo info={info} />
         )}
 
       </div>

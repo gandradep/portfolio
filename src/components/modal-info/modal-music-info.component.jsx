@@ -25,4 +25,3 @@ const ModalMusicInfo = ({info}) => {
 }
 
 export default ModalMusicInfo;
-
