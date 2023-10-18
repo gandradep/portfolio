@@ -11,8 +11,8 @@ This new portfolio shows different types of projects and has an animation made w
 - Jest
 - Three.js
 ## Live Demo
-
-- Visit the [app](https://profound-biscochitos-b105fe.netlify.app/) on the browser.
+- Soon to be live.
+<!-- - Visit the [app](https://gandr) on the browser. -->
 
 ## Authors
 
