@@ -7,6 +7,21 @@ const Projects = () => {
   // type: developer||creative||music
   const projects = [
     {
+      "id": 11,
+      "title": "Breathe Global",
+      "type": "developer",
+      "imageUrl": "/images/projects/breatheglobal.png",
+      "tech": [
+        "Sass",
+        "Javascript",
+        "Bootsrap"
+      ],
+      "links":{
+        "liveUrl":"http://breathe.global/"
+      },
+      "description": "Breathe Global in my portfolio showcases my expertise in migrating a webpage related to wearable iron lungs from Webflow to a fully hardcoded solution. This project involved custom interface design, interactivity enhancements, performance optimization, emphasizing my commitment to meaningful technological change for improved web experiences."
+    },
+    {
       "id": 10,
       "title": "Taipei Sounds",
       "type": "developer",
@@ -65,8 +80,8 @@ const Projects = () => {
       "type": "developer",
       "imageUrl": "/images/projects/quotes.png",
       "tech": [
-        "Html",
-        "CSS3",
+        "React",
+        "Redux",
         "Javascript"
       ],
       "links":{
