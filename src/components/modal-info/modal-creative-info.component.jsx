@@ -4,7 +4,7 @@ const ModalCreativeInfo = ({info}) => {
   const {description, srcUrl, title, tech, credits} = info
 
   return(
-    <div className='d-flex row mt-4'>
+    <div className='d-flex row'>
       <div className='col-12 col-sm-6 align-self-center order-sm-1 d-flex justify-content-center'>
         <div className='w-100'>
           <iframe

@@ -3,7 +3,7 @@ import './modal-info.styles.scss';
 const ModalDeveloperInfo = ({info}) => {
   const {description, tech, imageUrl, links} = info;
   return(
-    <div className='d-flex row mt-4'>
+    <div className='d-flex row'>
           <img className='img-fluid col-12 col-sm-5 align-self-center order-sm-1' src={imageUrl} alt="" />
           <div className='col-12 col-sm-6 mt-4 mt-sm-0'>
             <p>{description}</p>
