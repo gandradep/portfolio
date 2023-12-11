@@ -11,7 +11,7 @@ const ModalMusicInfo = ({info}) => {
   }
 
   return(
-    <div className='d-flex row mt-4'>
+    <div className='d-flex row'>
       <div className='col-12 col-sm-5 align-self-center order-sm-1 d-flex justify-content-center'>
         <iframe title={title} className={iframeClassName} src={srcUrl} seamless />
       </div>
