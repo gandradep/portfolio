@@ -7,6 +7,34 @@ const Projects = () => {
   // type: developer||creative||music
   const projects = [
     {
+      "id": 13,
+      "title" : "Claro de Luna",
+      "imageUrl": "/images/projects/luna.png",
+      "type": "creative",
+      "tech": [
+        "Arduino",
+        "LogicX"
+      ],
+      "credits": "Video music by Silla Turca",
+      "srcUrl": "https://www.youtube.com/embed/BFaLDq-3-dI?si=0sqa_WhY8vmS1MK-" ,
+      "description": "In collaboration with Iriz Collective, I contributed to a customized installation for the 'Bosque de Luz' exhibit at the Botanical Garden of Quito. The installation aimed to immerse visitors in a moonlit environment through carefully designed soundscapes and lighting. The space provided a unique experience of being surrounded by nature under the moon, with an added interactive element—a microphone for visitors to share expressions of gratitude."
+    },
+    {
+      "id": 12,
+      "title": "Portfolio S.B.",
+      "type": "developer",
+      "imageUrl": "/images/projects/steve.png",
+      "tech": [
+        "Sass",
+        "Javascript",
+        "Bootsrap"
+      ],
+      "links":{
+        "liveUrl":"https://www.stevebull.org/"
+      },
+      "description": "The project consisted of migrating a portfolio webpage from Webflow to a custom single-page application. The resulting site is responsive, featuring a dynamic menu that appears and hides based on scrolling for an improved user experience. Additionally, the implementation ensures that it is easy for the user to update and showcase new projects on the portfolio."
+    },
+    {
       "id": 11,
       "title": "Breathe Global",
       "type": "developer",
@@ -17,7 +45,7 @@ const Projects = () => {
         "Bootsrap"
       ],
       "links":{
-        "liveUrl":"http://breathe.global/"
+        "liveUrl":"https://www.breathe.global/"
       },
       "description": "Breathe Global in my portfolio showcases my expertise in migrating a webpage related to wearable iron lungs from Webflow to a fully hardcoded solution. This project involved custom interface design, interactivity enhancements, performance optimization, emphasizing my commitment to meaningful technological change for improved web experiences."
     },

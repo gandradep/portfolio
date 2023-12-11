@@ -11,8 +11,8 @@ const ModalDeveloperInfo = ({info}) => {
               <>
               <h4 className='my-4'>Tech</h4>
               <div className='d-flex justify-content-start'>
-                {tech.map((item) => (
-                  <p className='me-2 px-3 py-2 badge rounded-pill text-bg-secondary' key={item.id}>{item}</p>
+                {tech.map((item, index) => (
+                  <p className='me-2 px-3 py-2 badge rounded-pill text-bg-secondary' key={index}>{item}</p>
                 ))}
               </div>
               </>
