@@ -7,6 +7,55 @@ const Projects = () => {
   // type: developer||creative||music
   const projects = [
     {
+      "id": 9,
+      "title": "Munay Suyu",
+      "type": "developer",
+      "imageUrl": "/images/projects/munaysuyu.jpg",
+      "tech": [
+        "PHP",
+        "Javascript",
+        "MySql"
+      ],
+      "links":{
+        "liveUrl":"http://munaysuyu.org/"
+      },
+      "description": "This project is an all-encompassing mobile application tailored for a spiritual school. This app is a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
+    },
+    {
+      "id": 11,
+      "title": "Breathe Global",
+      "type": "developer",
+      "imageUrl": "/images/projects/breatheglobal.jpg",
+      "tech": [
+        "Sass",
+        "Javascript",
+        "Bootsrap"
+      ],
+      "links":{
+        "liveUrl":"https://www.breathe.global/"
+      },
+      "description": "Breathe Global in my portfolio showcases my expertise in migrating a webpage related to wearable iron lungs from Webflow to a fully hardcoded solution. This project involved custom interface design, interactivity enhancements, performance optimization, emphasizing my commitment to meaningful technological change for improved web experiences."
+    },
+    {
+      "id": 14,
+      "title": "Angeles Mountains",
+      "type": "developer",
+      "imageUrl": "/images/projects/losangeles.jpg",
+      "tech": [
+        "CSS3",
+        "HTML5",
+        "Bootsrap"
+      ],
+      "links":{
+        "liveUrl":"https://gandradep.github.io/angeles_mountains/",
+        "source":{
+          "text":"Github",
+          "url":"https://github.com/gandradep/angeles_mountains"
+        }
+      },
+      "description": "Welcome to the Mountain Hiking Planner, an example web application designed to help outdoor enthusiasts plan their mountain hikes in the beautiful landscapes of Los Angeles. This project is a demonstration of translating a Photoshop design into a functional and responsive web application."
+    },
+    {
       "id": 13,
       "title" : "Claro de Luna",
       "imageUrl": "/images/projects/luna.png",
@@ -23,7 +72,7 @@ const Projects = () => {
       "id": 12,
       "title": "Portfolio S.B.",
       "type": "developer",
-      "imageUrl": "/images/projects/steve.png",
+      "imageUrl": "/images/projects/steve.jpg",
       "tech": [
         "Sass",
         "Javascript",
@@ -34,26 +83,12 @@ const Projects = () => {
       },
       "description": "The project consisted of migrating a portfolio webpage from Webflow to a custom single-page application. The resulting site is responsive, featuring a dynamic menu that appears and hides based on scrolling for an improved user experience. Additionally, the implementation ensures that it is easy for the user to update and showcase new projects on the portfolio."
     },
-    {
-      "id": 11,
-      "title": "Breathe Global",
-      "type": "developer",
-      "imageUrl": "/images/projects/breatheglobal.png",
-      "tech": [
-        "Sass",
-        "Javascript",
-        "Bootsrap"
-      ],
-      "links":{
-        "liveUrl":"https://www.breathe.global/"
-      },
-      "description": "Breathe Global in my portfolio showcases my expertise in migrating a webpage related to wearable iron lungs from Webflow to a fully hardcoded solution. This project involved custom interface design, interactivity enhancements, performance optimization, emphasizing my commitment to meaningful technological change for improved web experiences."
-    },
+
     {
       "id": 10,
       "title": "Taipei Sounds",
       "type": "developer",
-      "imageUrl": "/images/projects/taipesounds.png",
+      "imageUrl": "/images/projects/taipeisound.jpg",
       "tech": [
         "React",
         "P5.js",
@@ -68,26 +103,12 @@ const Projects = () => {
       },
       "description": " Taipei Sounds , a unique auditory experience that explores the vibrant sounds of Taipei's streets. Developed as part of the \"Fundamental Programming for Digital Music and Sound Synthesis\" class at National Taiwan Normal University, this project offers a creative blend of technology and music."
     },
-    {
-      "id": 9,
-      "title": "Munay Suyu",
-      "type": "developer",
-      "imageUrl": "/images/projects/munaySuyuMobile.png",
-      "tech": [
-        "PHP",
-        "Javascript",
-        "MySql"
-      ],
-      "links":{
-        "liveUrl":"http://munaysuyu.org/"
-      },
-      "description": "This project is an all-encompassing mobile application tailored for a spiritual school. This app is a dedicated hub for students and enthusiasts, providing access to a wealth of essential information, historical insights, and upcoming events."
-    },
+
     {
       "id": 8,
       "title": "Conference Page",
       "type": "developer",
-      "imageUrl": "/images/projects/conference_page.png",
+      "imageUrl": "/images/projects/conference_page.jpg",
       "tech": [
         "Html",
         "CSS3",
@@ -106,7 +127,7 @@ const Projects = () => {
       "id": 7,
       "title": "Famous Quotes",
       "type": "developer",
-      "imageUrl": "/images/projects/quotes.png",
+      "imageUrl": "/images/projects/quotes.jpg",
       "tech": [
         "React",
         "Redux",
