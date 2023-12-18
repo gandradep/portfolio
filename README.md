@@ -11,7 +11,7 @@ This new portfolio shows different types of projects and has an animation made w
 - Jest
 - Three.js
 ## Live Demo
-- Soon to be live.
+- Visit the [live site](https://gandradep.com/)
 <!-- - Visit the [app](https://gandr) on the browser. -->
 
 ## Authors
