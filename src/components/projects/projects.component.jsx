@@ -7,6 +7,35 @@ const Projects = () => {
   // type: developer||creative||music
   const projects = [
     {
+      "id": 16,
+      "title" : "Soundscapes of Connections",
+      "imageUrl": "/images/projects/soundScapes.png",
+      "type": "creative",
+      "tech": [
+        "Processing",
+        "Midi",
+        "Light design"
+      ],
+      "credits": "Video by Silla Turca",
+      "srcUrl": "https://www.youtube.com/embed/Ml17Jj0EvSQ?si=LV18icG7d3nC78KB" ,
+      "description": "In the Soundscapes of Connections project, I took on multiple roles beyond production, including creating sound-reactive visuals, designing the lighting, and contributing to the music composition. I controlled a synthesizer via MIDI using a BeatStep Pro, shaping the sonic landscape in real-time. The project blended immersive sound and visual elements to deepen the audience’s experience, highlighting the dynamic interplay between light, music, and movement."
+    },
+    {
+      "id": 15,
+      "title": "Hair by Bobby",
+      "type": "developer",
+      "imageUrl": "/images/projects/bobby.jpg",
+      "tech": [
+        "Wordpress",
+        "Bootsrap",
+        "Gimp"
+      ],
+      "links":{
+        "liveUrl":"https://hairbybobby.com/"
+      },
+      "description": "Hair by Bobby in my portfolio showcases my redesign of the website using WordPress, enhancing its design, navigation, and performance for a seamless user experience."
+    },
+    {
       "id": 9,
       "title": "Munay Suyu",
       "type": "developer",
@@ -122,25 +151,6 @@ const Projects = () => {
         }
       },
       "description": "The Mobile-Responsive single-page application (SPA) for a conference page is a software development initiative to create a user-friendly and mobile-optimized platform for hosting and managing conference-related content. "
-    },
-    {
-      "id": 7,
-      "title": "Famous Quotes",
-      "type": "developer",
-      "imageUrl": "/images/projects/quotes.jpg",
-      "tech": [
-        "React",
-        "Redux",
-        "Javascript"
-      ],
-      "links":{
-        "liveUrl":"https://profound-biscochitos-b105fe.netlify.app/",
-        "source":{
-          "text":"Github",
-          "url":"https://github.com/gandradep/famousQuotes"
-        }
-      },
-      "description": "A user-friendly mobile application designed to connect you with the profound wisdom of history's most influential thinkers. With just a few taps, you can delve into the deep insights and words of wisdom that have shaped our world. "
     },
     {
       "id": 6,
